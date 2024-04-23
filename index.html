@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Other header items -->
+		<title>Notepad++ Theme Generator</title>
+	
+		<!-- Javascript -->
+		<script src="./extra.js"></script>
+		<script src="./ColorPickerEvent.js"></script>
+		<script src="./ElementPlacer.js"></script>
+		<script src="./FileParser.js"></script>
+	
+		<!-- Style Sheets -->
+		<link rel="stylesheet" type="text/css" href="./style.css"/>
+	
+	</head>
+	
+	<!-- BODY PAST HERE -->
+	
+	<body>
+		
+		<h1>Notepad++ Theme Creator</h1>
+		<h3>Created by Cameron Sims</h3>
+		
+		To start, please submit your 'stylers.model.xml' or any of the 
+		XML files in the "style" file, both are located in your Notepad++ 
+		root directory.<p>
+		
+		<!-- This is where we get the file location -->
+		<input id="FileSubmission" type="file" accept="text/xml"/><p/>
+		
+		<span id="ErrorLocation" style="color: #ff0000; display: none;">Error: No File selected</span><p/>
+		
+		<!-- Submit the file -->
+		<button onclick="replaceNPPElements();">Submit File</button>
+		
+		<!-- Download the file -->
+		<button onclick="saveFile()">Save File</button>
+		
+		<!-- Past here, let javascript do it's "magic" -->
+		<table id="TokenField">
+			<tr>
+				<th>Foreground</th>
+				<th>Background</th>
+				<th>Bold</th>
+				<th>Italics</th>
+				<th>Underline</th>
+				<th>Example</th>
+				<th>Font Name</th>
+				<th>Font Size (px)</th>
+			</tr>
+			<!-- All programmed non-sense past here -->
+		</table>
+	</body>
+
+</html>
